@@ -1,0 +1,6 @@
+Reserva Ana: 1
+Reserva Luis: error: No se pudo crear la reserva el asiento F6, ya esta ocupado
+Ocupados: [F5, F6]
+Precio Ana (socio): 20.4
+Cancelar 1: Si
+Cancelar 99: error: No existe una reserva con codigo: 99
