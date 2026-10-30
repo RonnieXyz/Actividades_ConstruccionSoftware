@@ -50,7 +50,7 @@ public class Main {
             // Cancelar reserva existente
             sistema.cancelarReserva(idAna);
 
-            System.out.println("Cancelar 1: OK");
+            System.out.println("Cancelar 1: Si");
 
         } catch (IllegalStateException e) {
 
