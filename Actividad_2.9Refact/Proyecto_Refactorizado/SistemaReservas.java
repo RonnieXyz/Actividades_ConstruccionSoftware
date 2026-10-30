@@ -58,17 +58,14 @@ public class SistemaReservas {
     public int crearReserva(Cliente cliente, Funcion funcion, AsientosSolicitados solicitados, String canal) {
 
         if (cliente == null || funcion == null || solicitados == null) {
-            throw new IllegalArgumentException(
-                    "El cliente la funcion y los asientos son obligatorios");
+            throw new IllegalArgumentException("El cliente, la funcion y los asientos son obligatorios");
         }
 
         List<String> asientos = solicitados.getCodigos();
 
         for (String asiento : asientos) {
             if (funcion.estaAsientoOcupado(asiento)) {
-                throw new AsientoOcupadoException(
-                        "No se pudo crear la reserva el asiento "
-                                + asiento + " ya esta ocupado");
+                throw new AsientoOcupadoException( "No se pudo crear la reserva el asiento "+ asiento + ", ya esta ocupado");
             }
         }
 
